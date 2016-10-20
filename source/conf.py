@@ -36,17 +36,17 @@ templates_path = [u'_templates']
 source_suffix = '.rst'
 
 # The encoding of source files.
-source_encoding = u'utf-8-sig'
+source_encoding = 'cp949'
 
 
 # The master toctree document.
-master_doc = u'index'
+master_doc = 'index'
 
 
 # General information about the project.
-project = u'SphinxMenual'
+project = 'SphinxMenual'
 
-copyright = u'2016, GuenMo Kim'
+copyright = '2016, GuenMo Kim'
 
 
 # The version info for the project you're documenting, acts as replacement for
