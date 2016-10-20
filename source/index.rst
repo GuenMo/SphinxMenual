@@ -242,7 +242,7 @@ apidoc은 프로젝트에 포함한 pacakge, module, class, fuction, value들에
    
    source_encoding = 'cp949' # 한글 출력
    
-project/main.py에 함수를 추가 합니다.
+testProject/main.py에 함수를 추가 합니다.
 
 .. code-block:: restructuredtext
 
@@ -291,7 +291,7 @@ cmd 창에 make html을 실행 하고 _build\html\index.html을 확인한다.
 8. Mock Class
 =============
 
-project/fucntionForMaya.py 추가 합니다.
+testProject/fucntionForMaya.py 추가 합니다.
 
 .. image:: image/0018.jpg
 
