@@ -188,9 +188,7 @@ Read The Docs Theme : https://github.com/snide/sphinx_rtd_theme
 
 .. image:: image/0013.jpg
 
-앞축을 풀고 sphinx_rtd_theme-master/sphinx_rtd_theme-master/ 안에 sphinx_rtd_theme 폴더를 복사 하고
-
-docs/_theme 폴더를 만들어 붙여넣기를 합니다.
+앞축을 풀고 sphinx_rtd_theme-master/sphinx_rtd_theme-master/ 안에 sphinx_rtd_theme 폴더를 복사 하고 docs/_theme 폴더를 만들어 붙여넣기를 합니다.
 
 .. image:: image/0014.jpg
 
