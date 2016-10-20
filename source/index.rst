@@ -50,11 +50,11 @@ Anaconda2에 기본 내장 되어 있습니다.
 
 .. important::
    
-   시스템 환경 변수는 본사에서 관리 하므로 추가 하지 않는다.
+   시스템 환경 변수는 본사에서 관리 하므로 추가 하지 않습니다.
    
    변수 이름: Paht
    
-   변수 값: Anaconda가 설치된 경로에 Script 폴더로 설정 한다. 
+   변수 값: Anaconda가 설치된 경로에 Script 폴더로 설정 합니다. 
 
 
 4. 프로젝트 폴더 구조
@@ -63,16 +63,6 @@ Anaconda2에 기본 내장 되어 있습니다.
 
 .. image:: image/0005.jpg
 
-.. note:: 
-   폴더 구조는 다음 싸이트를 참고 했습니다. 
-
-   `link1`_, `link2`_, `link3`_
-
-   .. _link1: http://python-guide-kr.readthedocs.io/ko/latest/writing/structure.html
-   
-   .. _link2: http://stackoverflow.com/questions/193161/what-is-the-best-project-structure-for-a-python-application
-   
-   .. _link3: https://learnpythonthehardway.org/book/ex46.html
 
 5. sphinx-quickstart
 ====================
@@ -403,7 +393,14 @@ http://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_numpy.html
 http://thomas-cokelaer.info/tutorials/sphinx/docstring_python.html
 
 
+Python Project Structure
+------------------------
 
+http://python-guide-kr.readthedocs.io/ko/latest/writing/structure.html
+   
+http://stackoverflow.com/questions/193161/what-is-the-best-project-structure-for-a-python-application
+   
+https://learnpythonthehardway.org/book/ex46.html
 
 
 
