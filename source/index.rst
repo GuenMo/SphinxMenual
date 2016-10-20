@@ -326,7 +326,7 @@ cmd 창에 다음과 같이 입력하고 실행 합니다.
 
 cmd 창에 make html 실행해 보면 :file:`ImportError: No module named pymel.all` 라는 에러가 발생 하면서 문서화가 실패 합니다.
 
-Anaconda2 python에서 pymel 당연히 모듈을 찾을수 없기 때문입니다.
+Anaconda2 python에서 당연히 pymel 모듈을 찾을수 없기 때문입니다.
 
 .. image:: image/0020.jpg
 
