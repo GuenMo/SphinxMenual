@@ -336,7 +336,7 @@ sys.path.insert(0, os.path.abspath(&#39;..&#39;)) # 프로젝트 package path �
 source_encoding = &#39;cp949&#39; # 한글 출력
 </pre></div>
 </div>
-<p>project/main.py에 함수를 추가 합니다.</p>
+<p>testProject/main.py에 함수를 추가 합니다.</p>
 <div class="highlight-restructuredtext"><div class="highlight"><pre><span></span># coding:utf-8
 
 def testFunc(arg1, arg2):
@@ -381,7 +381,7 @@ sphinx-apidoc -F -o D:\TestProject\docs D:\TestProject\testProject\ --separate
 </div>
 <div class="section" id="mock-class">
 <h2>8. Mock Class<a class="headerlink" href="#mock-class" title="Permalink to this headline">¶</a></h2>
-<p>project/fucntionForMaya.py 추가 합니다.</p>
+<p>testProject/fucntionForMaya.py 추가 합니다.</p>
 <img alt="_images/0018.jpg" src="_images/0018.jpg" />
 <p>함수를 다음과 같이 추가 합니다.</p>
 <div class="highlight-restructuredtext"><div class="highlight"><pre><span></span># coding:utf-8
@@ -407,7 +407,7 @@ def makeCube():
 <p>새로 fucntionForMaya.rst 파일이 생성 되었습니다.</p>
 <img alt="_images/0019.jpg" src="_images/0019.jpg" />
 <p>cmd 창에 make html 실행해 보면 <code class="file docutils literal"><span class="pre">ImportError:</span> <span class="pre">No</span> <span class="pre">module</span> <span class="pre">named</span> <span class="pre">pymel.all</span></code> 라는 에러가 발생 하면서 문서화가 실패 합니다.</p>
-<p>Anaconda2 python에서 pymel 당연히 모듈을 찾을수 없기 때문입니다.</p>
+<p>Anaconda2 python에서 당연히 pymel 모듈을 찾을수 없기 때문입니다.</p>
 <img alt="_images/0020.jpg" src="_images/0020.jpg" />
 <p>conf.py 파일에 다음 코드를 추가 한다.</p>
 <div class="highlight-restructuredtext"><div class="highlight"><pre><span></span>import os
