@@ -1,6 +1,12 @@
 .. SphinxMenual Documentation master file.
 
 .. image:: image/Mofac&alfred_CI_bl.png
+   :align: center
+
+| 
+|
+|
+| 
 
 #######################
 Sphinx Basic Directions
