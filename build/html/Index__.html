@@ -1,0 +1,847 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>reStructuredText Primer for TYPO3 Users &mdash; SphinxMenual 1.0.0 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="SphinxMenual 1.0.0 documentation" href="index.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> SphinxMenual
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <!-- Local TOC -->
+                <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">reStructuredText Primer for TYPO3 Users</a><ul>
+<li><a class="reference internal" href="#introduction">Introduction</a><ul>
+<li><a class="reference internal" href="#file-extensions">File Extensions</a></li>
+<li><a class="reference internal" href="#paragraphs">Paragraphs</a></li>
+<li><a class="reference internal" href="#indentation">Indentation</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#text-formatting">Text Formatting</a><ul>
+<li><a class="reference internal" href="#inline-markup-bold-italic-verbatim">Inline markup (bold, italic, verbatim)</a></li>
+<li><a class="reference internal" href="#headings">Headings</a></li>
+<li><a class="reference internal" href="#lists-bullets-and-quote-like-blocks">Lists, Bullets and Quote-like Blocks</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#what-are-directives">What are Directives</a></li>
+<li><a class="reference internal" href="#hyperlinks">Hyperlinks</a><ul>
+<li><a class="reference internal" href="#external-links">External Links</a></li>
+<li><a class="reference internal" href="#internal-links">Internal Links</a><ul>
+<li><a class="reference internal" href="#cross-referencing-arbitrary-locations">Cross-referencing Arbitrary Locations</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#tables">Tables</a></li>
+<li><a class="reference internal" href="#images-and-figures">Images and Figures</a></li>
+<li><a class="reference internal" href="#admonitions">Admonitions</a></li>
+<li><a class="reference internal" href="#including-other-files">Including other Files</a></li>
+<li><a class="reference internal" href="#others">Others</a><ul>
+<li><a class="reference internal" href="#comments">Comments</a></li>
+<li><a class="reference internal" href="#substitutions">Substitutions</a></li>
+<li><a class="reference internal" href="#source-code">Source Code</a></li>
+<li><a class="reference internal" href="#syntax-highlighting">Syntax Highlighting</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">SphinxMenual</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>reStructuredText Primer for TYPO3 Users</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="restructuredtext-primer-for-typo3-users">
+<span id="start"></span><h1>reStructuredText Primer for TYPO3 Users<a class="headerlink" href="#restructuredtext-primer-for-typo3-users" title="Permalink to this headline">¶</a></h1>
+<p>This section is a brief introduction to reStructuredText (reST) concepts and
+syntax, intended to provide TYPO3 authors with enough information to author
+documents productively.  Since reST was designed to be a simple, unobtrusive
+markup language, this will not take too long.</p>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last">The authoritative <a class="reference external" href="http://docutils.sourceforge.net/rst.html">reStructuredText User Documentation</a>.</p>
+</div>
+<p>ca
+.. contents:: Overview</p>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">local:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="AdvancedMarkup.html">Advanced Markup</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="AdvancedMarkup.html#title-copyright-and-version">Title, copyright and version</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="AdvancedMarkup.html#pdf-rendering">PDF rendering</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="AdvancedMarkup.html#multilingual-documentation">Multilingual documentation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="AdvancedMarkup.html#locales">Locales</a></li>
+<li class="toctree-l3"><a class="reference internal" href="AdvancedMarkup.html#best-practices">Best practices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="AdvancedMarkup.html#edit-manual-on-github">Edit manual on GitHub</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="AdvancedMarkup.html#other-semantic-markup">Other Semantic Markup</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="introduction">
+<span id="id1"></span><h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="file-extensions">
+<span id="id2"></span><h3>File Extensions<a class="headerlink" href="#file-extensions" title="Permalink to this headline">¶</a></h3>
+<p>reST documents are using the extension (ending) <code class="docutils literal"><span class="pre">.rst</span></code>. If you happen to include
+other files, such as when centralizing directives or substitutions (see below), you
+should use another file extension, such as <code class="docutils literal"><span class="pre">.txt</span></code> to prevent uncessary warnings.</p>
+</div>
+<div class="section" id="paragraphs">
+<span id="id3"></span><h3>Paragraphs<a class="headerlink" href="#paragraphs" title="Permalink to this headline">¶</a></h3>
+<p>The paragraph is the most basic block in a reST document.  Paragraphs are simply
+chunks of text separated by one or more blank lines.  Indentation is significant
+in reST, so all lines of the same paragraph must be left-aligned to the same level
+of indentation.</p>
+</div>
+<div class="section" id="indentation">
+<span id="id4"></span><h3>Indentation<a class="headerlink" href="#indentation" title="Permalink to this headline">¶</a></h3>
+<p>In TYPO3 documentation, we suggest to indent with either 1 tab (&#8220;\t&#8221;) or 4 spaces.</p>
+</div>
+</div>
+<div class="section" id="text-formatting">
+<span id="id5"></span><h2>Text Formatting<a class="headerlink" href="#text-formatting" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="inline-markup-bold-italic-verbatim">
+<span id="inlinemarkup"></span><h3>Inline markup (bold, italic, verbatim)<a class="headerlink" href="#inline-markup-bold-italic-verbatim" title="Permalink to this headline">¶</a></h3>
+<p>The standard reST inline markup is quite simple: use</p>
+<ul class="simple">
+<li>one asterisk: <code class="docutils literal"><span class="pre">*italic*</span></code> for emphasis (<em>italics</em>),</li>
+<li>two asterisks: <code class="docutils literal"><span class="pre">**bold**</span></code> for strong emphasis (<strong>boldface</strong>), and</li>
+<li>double backquotes: <code class="docutils literal"><span class="pre">``text``</span></code> for <code class="docutils literal"><span class="pre">code</span> <span class="pre">samples</span></code>.</li>
+</ul>
+<p>If asterisks or backquotes appear in running text and could be confused with
+inline markup delimiters, they have to be escaped with a backslash.</p>
+<p>Be aware of some restrictions of this markup:</p>
+<ul class="simple">
+<li>it may not be nested,</li>
+<li>content may not start or end with whitespace: <code class="docutils literal"><span class="pre">*</span> <span class="pre">text*</span></code> is wrong,</li>
+<li>it must be separated from surrounding text by non-word characters.  Use a
+backslash escaped space to work around that: <code class="docutils literal"><span class="pre">thisis\</span> <span class="pre">*one*\</span> <span class="pre">word</span></code>.</li>
+</ul>
+<p>reST also allows for custom &#8220;interpreted text roles&#8221;, which signify that the
+enclosed text should be interpreted in a specific way.  Sphinx uses this to
+provide semantic markup and cross-referencing of identifiers, as described in
+the appropriate section.  The general syntax is <code class="docutils literal"><span class="pre">:rolename:`content`</span></code>.</p>
+</div>
+<div class="section" id="headings">
+<span id="id6"></span><h3>Headings<a class="headerlink" href="#headings" title="Permalink to this headline">¶</a></h3>
+<p>Section headers are created by underlining (and optionally overlining) the section
+title with a punctuation character, at least as long as the text:</p>
+<div class="highlight-restructuredtext"><div class="highlight"><pre><span></span><span class="gh">=================</span>
+<span class="gh">This is a heading</span>
+<span class="gh">=================</span>
+</pre></div>
+</div>
+<p>Normally, there are no heading levels assigned to certain characters as the
+structure is determined from the succession of headings.  However, for the
+TYPO3 documentation, this convention is used which you may follow:</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">=</span></code> with overline, for title of the documentation</li>
+<li><code class="docutils literal"><span class="pre">=</span></code>, for chapters</li>
+<li><code class="docutils literal"><span class="pre">-</span></code>, for sections</li>
+<li><code class="docutils literal"><span class="pre">^</span></code>, for subsections</li>
+<li><code class="docutils literal"><span class="pre">&quot;</span></code>, for subsubsections</li>
+</ul>
+<div class="highlight-restructuredtext"><div class="highlight"><pre><span></span><span class="gh">======================</span>
+<span class="gh">Title of your document</span>
+<span class="gh">======================</span>
+
+<span class="gh">Chapter 1: whatever</span>
+<span class="gh">===================</span>
+
+Text goes here...
+
+<span class="gh">Section 1.1: else</span>
+<span class="gh">-----------------</span>
+
+and so on
+</pre></div>
+</div>
+<p>Of course, you are free to use your own marker characters (see the reST
+documentation), and use a deeper nesting level, but keep in mind that most
+target formats (HTML, LaTeX for PDF) have a limited supported nesting depth.</p>
+</div>
+<div class="section" id="lists-bullets-and-quote-like-blocks">
+<span id="bullet-lists"></span><h3>Lists, Bullets and Quote-like Blocks<a class="headerlink" href="#lists-bullets-and-quote-like-blocks" title="Permalink to this headline">¶</a></h3>
+<p>List markup is natural: just place an asterisk or a dash at the start of a
+paragraph and indent properly.  The same goes for numbered lists; they can also
+be autonumbered using a <code class="docutils literal"><span class="pre">#</span></code> sign. The following code:</p>
+<div class="highlight-restructuredtext"><div class="highlight"><pre><span></span><span class="m">-</span> This is a bulleted list.
+<span class="m">-</span> It has two items, the second
+  item uses two lines.
+
+<span class="m">*</span> This is another bulleted list.
+<span class="m">*</span> It has two items as well, the second
+  item uses two lines
+
+<span class="m">1.</span> This is a numbered list.
+<span class="m">2.</span> It has two items too.
+
+<span class="m">#.</span> This is a numbered list.
+<span class="m">#.</span> It has two items too.
+</pre></div>
+</div>
+<p>gives:</p>
+<ul class="simple">
+<li>This is a bulleted list.</li>
+<li>It has two items, the second
+item uses two lines.</li>
+</ul>
+<ul class="simple">
+<li>This is another bulleted list.</li>
+<li>It has two items as well, the second
+item uses two lines</li>
+</ul>
+<ol class="arabic simple">
+<li>This is a numbered list.</li>
+<li>It has two items too.</li>
+<li>This is a numbered list.</li>
+<li>It has two items too.</li>
+</ol>
+<p>Nested lists are possible, but be aware that they must be separated from the
+parent list items by blank lines. The following code:</p>
+<div class="highlight-none"><div class="highlight"><pre><span></span>- this is
+- a list
+
+  - with a nested list
+  - and some subitems
+
+- and here the parent list continues
+</pre></div>
+</div>
+<p>gives:</p>
+<ul class="simple">
+<li>this is</li>
+<li>a list<ul>
+<li>with a nested list</li>
+<li>and some subitems</li>
+</ul>
+</li>
+<li>and here the parent list continues</li>
+</ul>
+<div class="admonition caution">
+<p class="first admonition-title">Caution</p>
+<p>The text immediately after the bullet determines the indentation:</p>
+<img alt="Images/sublist_indent.png" class="last" src="Images/sublist_indent.png" />
+</div>
+<p>Definition lists are created as follows:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">term</span> <span class="p">(</span><span class="n">up</span> <span class="n">to</span> <span class="n">a</span> <span class="n">line</span> <span class="n">of</span> <span class="n">text</span><span class="p">)</span>
+    <span class="n">Definition</span> <span class="n">of</span> <span class="n">the</span> <span class="n">term</span><span class="p">,</span> <span class="n">which</span> <span class="n">must</span> <span class="n">be</span> <span class="n">indented</span>
+
+    <span class="ow">and</span> <span class="n">can</span> <span class="n">even</span> <span class="n">consist</span> <span class="n">of</span> <span class="n">multiple</span> <span class="n">paragraphs</span>
+
+<span class="nb">next</span> <span class="n">term</span>
+    <span class="n">Description</span><span class="o">.</span>
+</pre></div>
+</div>
+<p>and is rendered as:</p>
+<dl class="docutils">
+<dt>term (up to a line of text)</dt>
+<dd><p class="first">Definition of the term, which must be indented</p>
+<p class="last">and can even consist of multiple paragraphs</p>
+</dd>
+<dt>next term</dt>
+<dd>Description.</dd>
+</dl>
+<p>Note that the term cannot have more than one line of text.</p>
+<p>Quoted paragraphs are created by just indenting them more than the surrounding
+paragraphs.</p>
+<p>Line blocks are a way of preserving line breaks. The following code:</p>
+<div class="highlight-restructuredtext"><div class="highlight"><pre><span></span><span class="o">|</span> These lines are
+<span class="o">|</span> broken exactly like in
+<span class="o">|</span> the source file.
+</pre></div>
+</div>
+<p>gives:</p>
+<div class="line-block">
+<div class="line">These lines are</div>
+<div class="line">broken exactly like in</div>
+<div class="line">the source file.</div>
+</div>
+</div>
+</div>
+<div class="section" id="what-are-directives">
+<span id="directives"></span><h2>What are Directives<a class="headerlink" href="#what-are-directives" title="Permalink to this headline">¶</a></h2>
+<p>reST is mainly based on <em>directives</em> that are defined as follows:</p>
+<div class="highlight-restructuredtext"><div class="highlight"><pre><span></span><span class="cp">.. &lt;name&gt;:: &lt;arguments&gt;</span>
+<span class="cp">    :&lt;option&gt;: &lt;option values&gt;</span>
+
+<span class="cp">    content</span>
+</pre></div>
+</div>
+<p>Example:</p>
+<div class="highlight-restructuredtext"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">image</span><span class="p">::</span> ../images/test.png
+    <span class="nc">:width:</span> <span class="nf">200px</span>
+</pre></div>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Note the space between the directive and its argument as well as the blank
+line between the option and the content.</p>
+</div>
+<p>The directive content follows after a blank line and is indented relative to the
+directive start.</p>
+</div>
+<div class="section" id="hyperlinks">
+<span id="id7"></span><h2>Hyperlinks<a class="headerlink" href="#hyperlinks" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="external-links">
+<h3>External Links<a class="headerlink" href="#external-links" title="Permalink to this headline">¶</a></h3>
+<p>Use <code class="docutils literal"><span class="pre">`Link</span> <span class="pre">text</span> <span class="pre">&lt;http://example.com/&gt;`_</span></code> for inline web links.  If the link
+text should be the web address, you don&#8217;t need special markup at all, the parser
+finds links and mail addresses in ordinary text.</p>
+<p>You can also separate the link and the target definition, like this:</p>
+<div class="highlight-restructuredtext"><div class="highlight"><pre><span></span>This is a paragraph that contains <span class="s">`a link`_</span>.
+
+<span class="p">..</span> <span class="nt">_a link:</span> http://example.com/
+</pre></div>
+</div>
+</div>
+<div class="section" id="internal-links">
+<h3>Internal Links<a class="headerlink" href="#internal-links" title="Permalink to this headline">¶</a></h3>
+<p>Internal linking is done via a special reST role provided by Sphinx.</p>
+<div class="section" id="cross-referencing-arbitrary-locations">
+<h4>Cross-referencing Arbitrary Locations<a class="headerlink" href="#cross-referencing-arbitrary-locations" title="Permalink to this headline">¶</a></h4>
+<p>To support cross-referencing to arbitrary locations in any document, the
+standard reST labels are used.  For this to work label names must be unique
+throughout the entire documentation.  There are two ways in which you can
+refer to labels:</p>
+<ul>
+<li><p class="first">If you place a label directly before a section title, you can reference to
+it with <code class="docutils literal"><span class="pre">:ref:`label-name`</span></code>.  Example:</p>
+<div class="highlight-restructuredtext"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="nt">_my-reference-label:</span>
+
+<span class="gh">Section to cross-reference</span>
+<span class="gh">--------------------------</span>
+
+This is the text of the section.
+
+It refers to the section itself, see <span class="na">:ref:</span><span class="nv">`my-reference-label`</span>.
+</pre></div>
+</div>
+<p>The <code class="docutils literal"><span class="pre">:ref:</span></code> role would then generate a link to the section, with the link
+title being &#8220;Section to cross-reference&#8221;.  This works just as well when
+section and reference are in different source files.</p>
+<p>Automatic labels also work with figures: given :</p>
+<div class="highlight-restructuredtext"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="nt">_my-figure:</span>
+
+<span class="p">..</span> <span class="ow">figure</span><span class="p">::</span> whatever
+
+    Figure caption
+</pre></div>
+</div>
+<p>a reference <code class="docutils literal"><span class="pre">:ref:`my-figure`</span></code> would insert a reference to the figure
+with link text &#8220;Figure caption&#8221;.</p>
+<p>The same works for tables that are given an explicit caption using the
+<cite>table</cite> directive.</p>
+</li>
+<li><p class="first">Labels that aren&#8217;t placed before a section title can still be referenced
+to, but you must give the link an explicit title, using this syntax:
+<code class="docutils literal"><span class="pre">:ref:`Link</span> <span class="pre">title</span> <span class="pre">&lt;label-name&gt;`</span></code>.</p>
+</li>
+</ul>
+<div class="admonition caution">
+<p class="first admonition-title">Caution</p>
+<p class="last">Labels should always use a minus sign to separate words and not an
+underscore in order to prevent troubles with PDF output.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="tables">
+<span id="id8"></span><h2>Tables<a class="headerlink" href="#tables" title="Permalink to this headline">¶</a></h2>
+<p>Two forms of tables are supported.  For <em>grid tables</em>, you have to &#8220;paint&#8221; the
+cell grid yourself.  They look like this:</p>
+<div class="highlight-restructuredtext"><div class="highlight"><pre><span></span>+------------------------+------------+----------+----------+
+<span class="o">|</span> Header row, column 1   | Header 2   | Header 3 | Header 4 |
+<span class="o">|</span> (header rows optional) |            |          |          |
++========================+============+==========+==========+
+<span class="o">|</span> body row 1, column 1   | column 2   | column 3 | column 4 |
++------------------------+------------+----------+ spanning |
+<span class="o">|</span> body row 2             | ...        | ...      | here...  |
++------------------------+------------+----------+----------+
+</pre></div>
+</div>
+<p>and are rendered as:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="43%" />
+<col width="21%" />
+<col width="18%" />
+<col width="18%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Header row, column 1
+(header rows optional)</th>
+<th class="head">Header 2</th>
+<th class="head">Header 3</th>
+<th class="head">Header 4</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>body row 1, column 1</td>
+<td>column 2</td>
+<td>column 3</td>
+<td rowspan="2">column 4
+spanning
+here...</td>
+</tr>
+<tr class="row-odd"><td>body row 2</td>
+<td>...</td>
+<td>...</td>
+</tr>
+</tbody>
+</table>
+<p><em>Simple tables</em> are easier to write, but limited: they must contain more than one
+row, and the first column cannot contain multiple lines.  They look like this:</p>
+<div class="highlight-restructuredtext"><div class="highlight"><pre><span></span>=====  =====  =======
+A      B      A and B
+=====  =====  =======
+False  False  False
+True   False  False
+False  True   False
+True   True   True
+=====  =====  =======
+</pre></div>
+</div>
+<p>and are rendered as:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="29%" />
+<col width="29%" />
+<col width="41%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">A</th>
+<th class="head">B</th>
+<th class="head">A and B</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>False</td>
+<td>False</td>
+<td>False</td>
+</tr>
+<tr class="row-odd"><td>True</td>
+<td>False</td>
+<td>False</td>
+</tr>
+<tr class="row-even"><td>False</td>
+<td>True</td>
+<td>False</td>
+</tr>
+<tr class="row-odd"><td>True</td>
+<td>True</td>
+<td>True</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="images-and-figures">
+<span id="images"></span><h2>Images and Figures<a class="headerlink" href="#images-and-figures" title="Permalink to this headline">¶</a></h2>
+<p>reST supports an image directive, used like so:</p>
+<div class="highlight-restructuredtext"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">image</span><span class="p">::</span> gnu.png
+    <span class="nc">:width:</span> <span class="nf">200px</span>
+    <span class="nc">:alt:</span> <span class="nf">alternate text</span>
+</pre></div>
+</div>
+<p>When used within Sphinx, the file name given (here <code class="docutils literal"><span class="pre">gnu.png</span></code>) must be relative
+to the source file.  For example, the file <code class="docutils literal"><span class="pre">sketch/spam.rst</span></code> could refer
+to the image <code class="docutils literal"><span class="pre">images/spam.png</span></code> as <code class="docutils literal"><span class="pre">../images/spam.png</span></code>.</p>
+<p>Sphinx will automatically copy image files over to a subdirectory of the output
+directory on building (e.g. the <code class="docutils literal"><span class="pre">_static</span></code> directory for HTML output.)</p>
+<p>Interpretation of image size options (<code class="docutils literal"><span class="pre">width</span></code> and <code class="docutils literal"><span class="pre">height</span></code>) is as follows:
+if the size has no unit or the unit is pixels, the given size will only be
+respected for output channels that support pixels (i.e. not in LaTeX output).
+Other units (like <code class="docutils literal"><span class="pre">pt</span></code> for points) will be used for HTML and LaTeX output.</p>
+<p>Figures should be generally preferred:</p>
+<div class="highlight-restructuredtext"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">figure</span><span class="p">::</span> gnu.png
+    <span class="nc">:width:</span> <span class="nf">200px</span>
+    <span class="nc">:alt:</span> <span class="nf">alternate text</span>
+
+    figures are like images but with a caption and may be relocated
+    elsewhere (to better use available page space) when rendering a PDF
+</pre></div>
+</div>
+</div>
+<div class="section" id="admonitions">
+<span id="id9"></span><h2>Admonitions<a class="headerlink" href="#admonitions" title="Permalink to this headline">¶</a></h2>
+<p>Admonitions are call-out boxes that attract the user&#8217;s attention
+in various, be it for important stuff, links to more information, etc.
+This is a typical admonition structure:</p>
+<div class="highlight-restructuredtext"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">warning</span><span class="p">::</span>
+
+   Be careful when installing an extension, you never know
+   who developed it ;-)
+</pre></div>
+</div>
+<p>The following admonition types are commonly used in TYPO3 projects:</p>
+<ul>
+<li><p class="first">note</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Text of the note.</p>
+</div>
+</li>
+<li><p class="first">important</p>
+<div class="admonition important">
+<p class="first admonition-title">Important</p>
+<p class="last">Something important.</p>
+</div>
+</li>
+<li><p class="first">tip</p>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p class="last">A Friendly tip.</p>
+</div>
+</li>
+<li><p class="first">warning</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Be careful when using a given command.</p>
+</div>
+</li>
+</ul>
+<p>The special &#8220;todo&#8221; admonition will not be rendered. It is really just
+like a comment block inside your reST document.</p>
+</div>
+<div class="section" id="including-other-files">
+<span id="toctree"></span><h2>Including other Files<a class="headerlink" href="#including-other-files" title="Permalink to this headline">¶</a></h2>
+<p>Sooner or later you will want to structure your project documentation by having
+several reST files.  The toctree directive allows you to insert other files within
+a reST file. The reason to use this directive is that reST does not have facilities
+to interconnect several documents, or split documents into multiple output files.
+The toctree directive looks like:</p>
+<div class="highlight-restructuredtext"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">toctree</span><span class="p">::</span>
+    <span class="nc">:maxdepth:</span> <span class="nf">2</span>
+
+    intro.rst
+    chapter1.rst
+    chapter2.rst
+    otherDir/file.rst
+</pre></div>
+</div>
+<p>It includes 4 reST files and shows a table of contents (TOC) that includes the title
+found in the reST documents.</p>
+</div>
+<div class="section" id="others">
+<span id="id10"></span><h2>Others<a class="headerlink" href="#others" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="comments">
+<span id="id11"></span><h3>Comments<a class="headerlink" href="#comments" title="Permalink to this headline">¶</a></h3>
+<p>Every explicit markup block which isn&#8217;t a valid markup construct (like the
+images above) is regarded as a comment.  For example:</p>
+<div class="highlight-restructuredtext"><div class="highlight"><pre><span></span><span class="cp">.. This is a comment.</span>
+</pre></div>
+</div>
+<p>You can indent text after a comment start to form multiline comments:</p>
+<div class="highlight-restructuredtext"><div class="highlight"><pre><span></span><span class="cp">..</span>
+<span class="cp">    This whole indented block</span>
+<span class="cp">    is a comment.</span>
+
+<span class="cp">    Still in the comment.</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="substitutions">
+<span id="id12"></span><h3>Substitutions<a class="headerlink" href="#substitutions" title="Permalink to this headline">¶</a></h3>
+<p>reST supports &#8220;substitutions&#8221;, which are pieces of text and/or markup referred to
+in the text by <code class="docutils literal"><span class="pre">|name|</span></code>.  They are defined like this:</p>
+<div class="highlight-restructuredtext"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="nt">|name|</span> <span class="ow">replace</span><span class="p">::</span> replacement <span class="ge">*text*</span>
+</pre></div>
+</div>
+<p>or this:</p>
+<div class="highlight-restructuredtext"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="nt">|caution|</span> <span class="ow">image</span><span class="p">::</span> warning.png
+    <span class="nc">:alt:</span> <span class="nf">Warning!</span>
+</pre></div>
+</div>
+<p>Sphinx provides three substitutions that are defined by default.</p>
+<dl class="describe">
+<dt>
+<code class="descname">|release|</code></dt>
+<dd><p>Replaced by the project release the documentation refers to.  This is meant
+to be the full version string including alpha/beta/release candidate tags,
+e.g. <code class="docutils literal"><span class="pre">2.5.2b3</span></code>.</p>
+</dd></dl>
+
+<dl class="describe">
+<dt>
+<code class="descname">|version|</code></dt>
+<dd><p>Replaced by the project version the documentation refers to. This is meant to
+consist only of the major and minor version parts, e.g. <code class="docutils literal"><span class="pre">2.5</span></code>, even for
+version 2.5.1.</p>
+</dd></dl>
+
+<dl class="describe">
+<dt>
+<code class="descname">|today|</code></dt>
+<dd><p>Replaced by either today&#8217;s date (the date on which the document is read), or
+the date set in the build configuration file.  Normally has the format
+<code class="docutils literal"><span class="pre">April</span> <span class="pre">14,</span> <span class="pre">2007</span></code>.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="source-code">
+<span id="id13"></span><h3>Source Code<a class="headerlink" href="#source-code" title="Permalink to this headline">¶</a></h3>
+<p>Literal code blocks are introduced by ending a paragraph with the special
+marker <code class="docutils literal"><span class="pre">::</span></code>.  The literal block must be indented (and, like all paragraphs,
+separated from the surrounding ones by blank lines):</p>
+<div class="highlight-restructuredtext"><div class="highlight"><pre><span></span>This is a normal text paragraph. The next paragraph is a code sample<span class="se">::</span>
+
+<span class="s">    It is not processed in any way, except</span>
+<span class="s">    that the indentation is removed.</span>
+
+<span class="s">    It can span multiple lines.</span>
+
+This is a normal text paragraph again.
+</pre></div>
+</div>
+<p>The handling of the <code class="docutils literal"><span class="pre">::</span></code> marker is smart:</p>
+<ul class="simple">
+<li>If it occurs as a paragraph of its own, that paragraph is completely left
+out of the document.</li>
+<li>If it is preceded by whitespace, the marker is removed.</li>
+<li>If it is preceded by non-whitespace, the marker is replaced by a single
+colon.</li>
+</ul>
+<p>That way, the second sentence in the above example&#8217;s first paragraph would be
+rendered as &#8220;The next paragraph is a code sample:&#8221; (single colon at the end).</p>
+</div>
+<div class="section" id="syntax-highlighting">
+<h3>Syntax Highlighting<a class="headerlink" href="#syntax-highlighting" title="Permalink to this headline">¶</a></h3>
+<p>Instead of using the special marker <code class="docutils literal"><span class="pre">::</span></code>, you may prefer the <code class="docutils literal"><span class="pre">code-block</span></code>
+directive which lets you highlight the code for a specific language:</p>
+<div class="highlight-restructuredtext"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">code-block</span><span class="p">::</span> <span class="k">php</span>
+
+    <span class="cp">&lt;?php</span>
+    <span class="nv">$foo</span> <span class="o">=</span> <span class="s1">&#39;bar&#39;</span><span class="p">;</span>
+    <span class="cp">?&gt;</span><span class="x"></span>
+</pre></div>
+</div>
+<p>to get:</p>
+<div class="highlight-php"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="nv">$foo</span> <span class="o">=</span> <span class="s1">&#39;bar&#39;</span><span class="p">;</span>
+<span class="cp">?&gt;</span><span class="x"></span>
+</pre></div>
+</div>
+<p>You may number lines as well and emphasize one or more lines:</p>
+<div class="highlight-restructuredtext"><div class="highlight"><pre><span></span><span class="p"> ..</span> <span class="ow">code-block</span><span class="p">::</span> yaml
+<span class="hll">     <span class="nc">:linenos:</span>
+</span><span class="hll">     <span class="nc">:emphasize-lines:</span> <span class="nf">1,4-5</span>
+</span>
+     conf.py:
+       copyright: 2013-2014
+       project: Sphinx Python Documentation Generator and Viewer
+       version: 1.3
+       release: 1.3.0
+</pre></div>
+</div>
+<p>which shows as:</p>
+<div class="highlight-yaml"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="hll"><span class="l l-Scalar l-Scalar-Plain">conf.py</span><span class="p p-Indicator">:</span>
+</span>  <span class="l l-Scalar l-Scalar-Plain">copyright</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">2013-2014</span>
+  <span class="l l-Scalar l-Scalar-Plain">project</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Sphinx Python Documentation Generator and Viewer</span>
+<span class="hll">  <span class="l l-Scalar l-Scalar-Plain">version</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">1.3</span>
+</span><span class="hll">  <span class="l l-Scalar l-Scalar-Plain">release</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">1.3.0</span>
+</span></pre></div>
+</td></tr></table></div>
+<p>See <a class="reference external" href="http://pygments.org/docs/lexers/">http://pygments.org/docs/lexers/</a> for a list of supported languages (please
+note that &#8216;typoscript&#8217; is supported as well).</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, GuenMo Kim.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.0.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
