@@ -1,5 +1,7 @@
 .. SphinxMenual Documentation master file.
 
+.. image:: image/Mofac&alfred_CI_bl.png
+
 #######################
 Sphinx Basic Directions
 #######################
