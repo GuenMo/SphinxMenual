@@ -79,15 +79,14 @@
                 <!-- Local TOC -->
                 <div class="local-toc"><ul>
 <li><a class="reference internal" href="#">Sphinx Basic Directions</a><ul>
-<li><a class="reference internal" href="#sphinx">1. Sphinx란</a></li>
-<li><a class="reference internal" href="#id1">2. 설치</a></li>
-<li><a class="reference internal" href="#id2">3. 환경 설정</a></li>
-<li><a class="reference internal" href="#id3">4. 프로젝트 폴더 구조</a></li>
+<li><a class="reference internal" href="#id1">2. ?ㅼ튂</a></li>
+<li><a class="reference internal" href="#id2">3. ?섍꼍 ?ㅼ젙</a></li>
+<li><a class="reference internal" href="#id3">4. ?꾨줈?앺듃 ?대뜑 援ъ“</a></li>
 <li><a class="reference internal" href="#sphinx-quickstart">5. sphinx-quickstart</a></li>
-<li><a class="reference internal" href="#theme">6. Theme 변경</a></li>
+<li><a class="reference internal" href="#theme">6. Theme 蹂?꼍</a></li>
 <li><a class="reference internal" href="#sphinx-apidoc">7. sphinx-apidoc</a></li>
 <li><a class="reference internal" href="#mock-class">8. Mock Class</a></li>
-<li><a class="reference internal" href="#id4">9. 참고 자료</a><ul>
+<li><a class="reference internal" href="#id4">9. 李멸퀬 ?먮즺</a><ul>
 <li><a class="reference internal" href="#restructuredtext">reStructuredText</a></li>
 <li><a class="reference internal" href="#python-docstring">Python Docstring</a></li>
 <li><a class="reference internal" href="#python-project-structure">Python Project Structure</a></li>
@@ -163,46 +162,46 @@
 </div>
 <div class="section" id="sphinx-basic-directions">
 <h1>Sphinx Basic Directions<a class="headerlink" href="#sphinx-basic-directions" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="sphinx">
-<h2>1. Sphinx란<a class="headerlink" href="#sphinx" title="Permalink to this headline">¶</a></h2>
-<p><a class="reference external" href="https://www.python.org/dev/peps/pep-0257/">PEP 257</a>, Docstrong Conventions. 문서화에 아주 중요하게 쓰일 docstring 컨벤션에 대해 정의한 PEP 입니다.
-Sphinx는 바로 Python 코드 내에 들어간 docstring을 자동으로 문서화해주는 도구이며 아주 간단한 설정만 끝내면 손쉽게 문서를 만들 수 있습니다.</p>
-</div>
+<ol class="arabic simple">
+<li>Sphinx??==========</li>
+</ol>
+<p><a class="reference external" href="https://www.python.org/dev/peps/pep-0257/">PEP 257</a>, Docstrong Conventions. 臾몄꽌?붿뿉 ?꾩＜ 以묒슂?섍쾶 ?곗씪 docstring 而⑤깽?섏뿉 ??빐 ?뺤쓽??PEP ?낅땲??
+Sphinx??諛붾줈 Python 肄붾뱶 ?댁뿉 ?ㅼ뼱媛?docstring???먮룞?쇰줈 臾몄꽌?뷀빐二쇰뒗 ?꾧뎄?대ŉ ?꾩＜ 媛꾨떒???ㅼ젙留??앸궡硫??먯돺寃?臾몄꽌瑜?留뚮뱾 ???덉뒿?덈떎.</p>
 <div class="section" id="id1">
-<h2>2. 설치<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
-<p>Anaconda2에 기본 내장 되어 있습니다.</p>
+<h2>2. ?ㅼ튂<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p>Anaconda2??湲곕낯 ?댁옣 ?섏뼱 ?덉뒿?덈떎.</p>
 </div>
 <div class="section" id="id2">
-<h2>3. 환경 설정<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<h2>3. ?섍꼍 ?ㅼ젙<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <dl class="docutils">
-<dt>윈도우 환경 설정에 Path를 추가 합니다.</dt>
-<dd>[고급 시스템 설정] -&gt; [고급] -&gt; [환경 변수] -&gt; [새로 만들기] -&gt; [새 사용자 변수]</dd>
+<dt>?덈룄???섍꼍 ?ㅼ젙??Path瑜?異붽? ?⑸땲??</dt>
+<dd>[怨좉툒 ?쒖뒪???ㅼ젙] -&gt; [怨좉툒] -&gt; [?섍꼍 蹂?닔] -&gt; [?덈줈 留뚮뱾湲? -&gt; [???ъ슜??蹂?닔]</dd>
 </dl>
 <img alt="_images/0001.jpg" src="_images/0001.jpg" />
-<p>[고급 시스템 설정]</p>
+<p>[怨좉툒 ?쒖뒪???ㅼ젙]</p>
 <img alt="_images/0002.jpg" src="_images/0002.jpg" />
-<p>[고급] -&gt; [환경 변수]</p>
+<p>[怨좉툒] -&gt; [?섍꼍 蹂?닔]</p>
 <img alt="_images/0003.jpg" src="_images/0003.jpg" />
-<p>[새로 만들기]</p>
+<p>[?덈줈 留뚮뱾湲?</p>
 <img alt="_images/0004.jpg" src="_images/0004.jpg" />
-<p>[새 사용자 변수]</p>
+<p>[???ъ슜??蹂?닔]</p>
 <div class="admonition important">
 <p class="first admonition-title">Important</p>
-<p>시스템 환경 변수는 본사에서 관리 하므로 추가 하지 않습니다.</p>
-<p>변수 이름: Paht</p>
-<p class="last">변수 값: Anaconda가 설치된 경로에 Script 폴더로 설정 합니다.</p>
+<p>?쒖뒪???섍꼍 蹂?닔??蹂몄궗?먯꽌 愿?━ ?섎?濡?異붽? ?섏? ?딆뒿?덈떎.</p>
+<p>蹂?닔 ?대쫫: Paht</p>
+<p class="last">蹂?닔 媛? Anaconda媛??ㅼ튂??寃쎈줈??Script ?대뜑濡??ㅼ젙 ?⑸땲??</p>
 </div>
 </div>
 <div class="section" id="id3">
-<h2>4. 프로젝트 폴더 구조<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
-<p>프로 젝트 폴더 구조는 다음과 같이 만듭니다.</p>
+<h2>4. ?꾨줈?앺듃 ?대뜑 援ъ“<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>?꾨줈 ?앺듃 ?대뜑 援ъ“???ㅼ쓬怨?媛숈씠 留뚮벊?덈떎.</p>
 <img alt="_images/0005.jpg" src="_images/0005.jpg" />
 </div>
 <div class="section" id="sphinx-quickstart">
 <h2>5. sphinx-quickstart<a class="headerlink" href="#sphinx-quickstart" title="Permalink to this headline">¶</a></h2>
-<p>cmd 창에서 docs 폴더로 이동 합니다.</p>
+<p>cmd 李쎌뿉??docs ?대뜑濡??대룞 ?⑸땲??</p>
 <img alt="_images/0006.jpg" src="_images/0006.jpg" />
-<p>cmd 창에서 sphinx-quickstart를 입력하고 다음과 같이 진행합니다.</p>
+<p>cmd 李쎌뿉??sphinx-quickstart瑜??낅젰?섍퀬 ?ㅼ쓬怨?媛숈씠 吏꾪뻾?⑸땲??</p>
 <img alt="_images/0007.jpg" src="_images/0007.jpg" />
 <div class="highlight-restructuredtext"><div class="highlight"><pre><span></span>Welcome to the Sphinx 1.4.8 quickstart utility.
 
@@ -286,24 +285,24 @@ source files. Use the Makefile to build the docs, like so:
 where &quot;builder&quot; is one of the supported builders, e.g. html, latex or linkcheck.
 </pre></div>
 </div>
-<p>docs 폴더 안에 다음 구조가 생깁니다.</p>
+<p>docs ?대뜑 ?덉뿉 ?ㅼ쓬 援ъ“媛??앷퉩?덈떎.</p>
 <img alt="_images/0008.jpg" src="_images/0008.jpg" />
-<p>cmd 창에서 make html를 입력하고 다음과 같이 진행합니다.</p>
+<p>cmd 李쎌뿉??make html瑜??낅젰?섍퀬 ?ㅼ쓬怨?媛숈씠 吏꾪뻾?⑸땲??</p>
 <img alt="_images/0010.jpg" src="_images/0010.jpg" />
-<p>_build/html 폴더 안에 다음 구조가 생깁니다.</p>
+<p>_build/html ?대뜑 ?덉뿉 ?ㅼ쓬 援ъ“媛??앷퉩?덈떎.</p>
 <img alt="_images/0011.jpg" src="_images/0011.jpg" />
-<p>_build/html/index.html을 확인 해보면 다음과 같습니다.</p>
+<p>_build/html/index.html???뺤씤 ?대낫硫??ㅼ쓬怨?媛숈뒿?덈떎.</p>
 <img alt="_images/0012.jpg" src="_images/0012.jpg" />
 </div>
 <div class="section" id="theme">
-<h2>6. Theme 변경<a class="headerlink" href="#theme" title="Permalink to this headline">¶</a></h2>
-<p>Sphinx로 만들어지는 html의 테마를 병경 해보겠습니다.</p>
-<p>다음 링크로 이동 하고 다운로드 합니다.</p>
+<h2>6. Theme 蹂?꼍<a class="headerlink" href="#theme" title="Permalink to this headline">¶</a></h2>
+<p>Sphinx濡?留뚮뱾?댁???html???뚮쭏瑜?蹂묎꼍 ?대낫寃좎뒿?덈떎.</p>
+<p>?ㅼ쓬 留곹겕濡??대룞 ?섍퀬 ?ㅼ슫濡쒕뱶 ?⑸땲??</p>
 <p>Read The Docs Theme : <a class="reference external" href="https://github.com/snide/sphinx_rtd_theme">https://github.com/snide/sphinx_rtd_theme</a></p>
 <img alt="_images/0013.jpg" src="_images/0013.jpg" />
-<p>앞축을 풀고 sphinx_rtd_theme-master/sphinx_rtd_theme-master/ 안에 sphinx_rtd_theme 폴더를 복사 하고 docs/_theme 폴더를 만들어 붙여넣기를 합니다.</p>
+<p>?욎텞????퀬 sphinx_rtd_theme-master/sphinx_rtd_theme-master/ ?덉뿉 sphinx_rtd_theme ?대뜑瑜?蹂듭궗 ?섍퀬 docs/_theme ?대뜑瑜?留뚮뱾??遺숈뿬?ｊ린瑜??⑸땲??</p>
 <img alt="_images/0014.jpg" src="_images/0014.jpg" />
-<p>docs/conf.py를 수정 합니다.</p>
+<p>docs/conf.py瑜??섏젙 ?⑸땲??</p>
 <div class="highlight-restructuredtext"><div class="highlight"><pre><span></span>html_theme = &#39;sphinx_rtd_theme&#39;
 
 html_theme_options = {
@@ -315,15 +314,15 @@ html_theme_options = {
 html_theme_path =  [&quot;_themes&quot;, ]
 </pre></div>
 </div>
-<p>cmd 창에서 make html을 다시 실행 합니다.</p>
-<p>_build/html/index.html을 다시 확인 해보면 테마가 변경된 것을 볼수 있습니다.</p>
+<p>cmd 李쎌뿉??make html???ㅼ떆 ?ㅽ뻾 ?⑸땲??</p>
+<p>_build/html/index.html???ㅼ떆 ?뺤씤 ?대낫硫??뚮쭏媛?蹂?꼍??寃껋쓣 蹂쇱닔 ?덉뒿?덈떎.</p>
 <img alt="_images/0015.jpg" src="_images/0015.jpg" />
 </div>
 <div class="section" id="sphinx-apidoc">
 <h2>7. sphinx-apidoc<a class="headerlink" href="#sphinx-apidoc" title="Permalink to this headline">¶</a></h2>
-<p>apidoc은 프로젝트에 포함한 pacakge, module, class, fuction, value들에 포함된 주석들을 자동으로 문서화 해주는 기능 입니다.</p>
-<p>우선 docs/conf.py를 수정 합니다.</p>
-<p>주석 처리된 부분을 찾아서 아래와 같이 수정 합니다.</p>
+<p>apidoc???꾨줈?앺듃???ы븿??pacakge, module, class, fuction, value?ㅼ뿉 ?ы븿??二쇱꽍?ㅼ쓣 ?먮룞?쇰줈 臾몄꽌???댁＜??湲곕뒫 ?낅땲??</p>
+<p>?곗꽑 docs/conf.py瑜??섏젙 ?⑸땲??</p>
+<p>二쇱꽍 泥섎━??遺?텇??李얠븘???꾨옒??媛숈씠 ?섏젙 ?⑸땲??</p>
 <div class="highlight-restructuredtext"><div class="highlight"><pre><span></span># import os
 # import sys
 # sys.path.insert(0, os.path.abspath(&#39;.&#39;))
@@ -333,20 +332,20 @@ html_theme_path =  [&quot;_themes&quot;, ]
 
 import os
 import sys
-sys.path.insert(0, os.path.abspath(&#39;..&#39;)) # 프로젝트 package path 설정
+sys.path.insert(0, os.path.abspath(&#39;..&#39;)) # ?꾨줈?앺듃 package path ?ㅼ젙
 
-source_encoding = &#39;cp949&#39; # 한글 출력
+source_encoding = &#39;cp949&#39; # ?쒓? 異쒕젰
 </pre></div>
 </div>
-<p>testProject/main.py에 함수를 추가 합니다.</p>
+<p>testProject/main.py???⑥닔瑜?異붽? ?⑸땲??</p>
 <div class="highlight-restructuredtext"><div class="highlight"><pre><span></span># coding:utf-8
 
 def testFunc(arg1, arg2):
-    &quot;&quot;&quot;이 함수는 두개의 변수를 받아 그 값을 더해 리턴 합니다.
+    &quot;&quot;&quot;???⑥닔???먭컻??蹂?닔瑜?諛쏆븘 洹?媛믪쓣 ?뷀빐 由ы꽩 ?⑸땲??
 
-    <span class="nc">:param arg1:</span> <span class="nf">첫 번째 변수 입니다.</span>
+    <span class="nc">:param arg1:</span> <span class="nf">泥?踰덉㎏ 蹂?닔 ?낅땲??</span>
     <span class="nc">:type arg1:</span> <span class="nf">(int)</span>
-    <span class="nc">:param arg2:</span> <span class="nf">두 번째 변수 입니다.</span>
+    <span class="nc">:param arg2:</span> <span class="nf">??踰덉㎏ 蹂?닔 ?낅땲??</span>
     <span class="nc">:type arg1:</span> <span class="nf">(float)</span>
 
     <span class="nc">:returns:</span> <span class="nf">arg1 + arg2</span>
@@ -362,20 +361,20 @@ def testFunc(arg1, arg2):
     return arg1 + arg2
 </pre></div>
 </div>
-<p>cmd 창에 다음과 같이 입력하고 실행 합니다.</p>
-<div class="highlight-restructuredtext"><div class="highlight"><pre><span></span>sphinx-apidoc -F -o &lt;docs의 경로&gt; &lt;프로젝트의 package 경로&gt; --separate
+<p>cmd 李쎌뿉 ?ㅼ쓬怨?媛숈씠 ?낅젰?섍퀬 ?ㅽ뻾 ?⑸땲??</p>
+<div class="highlight-restructuredtext"><div class="highlight"><pre><span></span>sphinx-apidoc -F -o &lt;docs??寃쎈줈&gt; &lt;?꾨줈?앺듃??package 寃쎈줈&gt; --separate
 
 ex)
 sphinx-apidoc -F -o D:\TestProject\docs D:\TestProject\testProject\ --separate
 </pre></div>
 </div>
-<p>아래와 같이 결과가 출력 됩니다. 위에 두 줄을 보면 testProject.rst와 testProject.main.rst 추가 적으로 두개의 파일이 생성 됩니다.</p>
+<p>?꾨옒??媛숈씠 寃곌낵媛?異쒕젰 ?⑸땲?? ?꾩뿉 ??以꾩쓣 蹂대㈃ testProject.rst??testProject.main.rst 異붽? ?곸쑝濡??먭컻???뚯씪???앹꽦 ?⑸땲??</p>
 <img alt="_images/0016.jpg" src="_images/0016.jpg" />
 <dl class="docutils">
-<dt>cmd 창에 make html을 실행 하고 _buildhtmlindex.html을 확인한다.</dt>
+<dt>cmd 李쎌뿉 make html???ㅽ뻾 ?섍퀬 _buildhtmlindex.html???뺤씤?쒕떎.</dt>
 <dd><dl class="first last docutils">
-<dt>[Module Index] -&gt; [testProject.main] 클릭 합니다.</dt>
-<dd>주석이 자동으로 문서화 되었습니다.</dd>
+<dt>[Module Index] -&gt; [testProject.main] ?대┃ ?⑸땲??</dt>
+<dd>二쇱꽍???먮룞?쇰줈 臾몄꽌???섏뿀?듬땲??</dd>
 </dl>
 </dd>
 </dl>
@@ -383,17 +382,17 @@ sphinx-apidoc -F -o D:\TestProject\docs D:\TestProject\testProject\ --separate
 </div>
 <div class="section" id="mock-class">
 <h2>8. Mock Class<a class="headerlink" href="#mock-class" title="Permalink to this headline">¶</a></h2>
-<p>testProject/fucntionForMaya.py 추가 합니다.</p>
+<p>testProject/fucntionForMaya.py 異붽? ?⑸땲??</p>
 <img alt="_images/0018.jpg" src="_images/0018.jpg" />
-<p>함수를 다음과 같이 추가 합니다.</p>
+<p>?⑥닔瑜??ㅼ쓬怨?媛숈씠 異붽? ?⑸땲??</p>
 <div class="highlight-restructuredtext"><div class="highlight"><pre><span></span># coding:utf-8
 
 import pymel.all as pm
 
 def makeCube():
-    &quot;&quot;&quot; 폴리곤 큐브를 만들고 이름을 리턴 합니다.
+    &quot;&quot;&quot; ?대━怨??먮툕瑜?留뚮뱾怨??대쫫??由ы꽩 ?⑸땲??
 
-    <span class="nc">:returns:</span> <span class="nf">폴리곤 큐브 이름</span>
+    <span class="nc">:returns:</span> <span class="nf">?대━怨??먮툕 ?대쫫</span>
     <span class="nc">:rtype:</span> <span class="nf">(str)</span>
 
     &quot;&quot;&quot;
@@ -402,20 +401,20 @@ def makeCube():
     return cube.name()
 </pre></div>
 </div>
-<p>cmd 창에 다음과 같이 입력하고 실행 합니다.</p>
+<p>cmd 李쎌뿉 ?ㅼ쓬怨?媛숈씠 ?낅젰?섍퀬 ?ㅽ뻾 ?⑸땲??</p>
 <div class="highlight-restructuredtext"><div class="highlight"><pre><span></span>sphinx-apidoc -F -o D:\TestProject\docs D:\TestProject\testProject\ --separate
 </pre></div>
 </div>
-<p>새로 fucntionForMaya.rst 파일이 생성 되었습니다.</p>
+<p>?덈줈 fucntionForMaya.rst ?뚯씪???앹꽦 ?섏뿀?듬땲??</p>
 <img alt="_images/0019.jpg" src="_images/0019.jpg" />
-<p>cmd 창에 make html 실행해 보면 <code class="file docutils literal"><span class="pre">ImportError:</span> <span class="pre">No</span> <span class="pre">module</span> <span class="pre">named</span> <span class="pre">pymel.all</span></code> 라는 에러가 발생 하면서 문서화가 실패 합니다.</p>
-<p>Anaconda2 python에서 당연히 pymel 모듈을 찾을수 없기 때문입니다.</p>
+<p>cmd 李쎌뿉 make html ?ㅽ뻾??蹂대㈃ <code class="file docutils literal"><span class="pre">ImportError:</span> <span class="pre">No</span> <span class="pre">module</span> <span class="pre">named</span> <span class="pre">pymel.all</span></code> ?쇰뒗 ?먮윭媛?諛쒖깮 ?섎㈃??臾몄꽌?붽? ?ㅽ뙣 ?⑸땲??</p>
+<p>Anaconda2 python?먯꽌 ?뱀뿰??pymel 紐⑤뱢??李얠쓣???녾린 ?뚮Ц?낅땲??</p>
 <img alt="_images/0020.jpg" src="_images/0020.jpg" />
-<p>conf.py 파일에 다음 코드를 추가 한다.</p>
+<p>conf.py ?뚯씪???ㅼ쓬 肄붾뱶瑜?異붽? ?쒕떎.</p>
 <div class="highlight-restructuredtext"><div class="highlight"><pre><span></span>import os
 import sys
 sys.path.insert(0, os.path.abspath(&#39;..&#39;))
-# 다음 줄에 아래 코드를 추가 한다.
+# ?ㅼ쓬 以꾩뿉 ?꾨옒 肄붾뱶瑜?異붽? ?쒕떎.
 
 <span class="hll">class Mock(object):
 </span><span class="hll">
@@ -447,11 +446,11 @@ sys.path.insert(0, os.path.abspath(&#39;..&#39;))
 </span><span class="hll">    sys.modules[mod_name] = Mock()
 </span></pre></div>
 </div>
-<p>cmd 창에 make html 실행 한후 새로운 만든 함수의 주석이 문서화 되었는지 확인 합니다.</p>
+<p>cmd 李쎌뿉 make html ?ㅽ뻾 ?쒗썑 ?덈줈??留뚮뱺 ?⑥닔??二쇱꽍??臾몄꽌???섏뿀?붿? ?뺤씤 ?⑸땲??</p>
 <img alt="_images/0021.jpg" src="_images/0021.jpg" />
 </div>
 <div class="section" id="id4">
-<h2>9. 참고 자료<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<h2>9. 李멸퀬 ?먮즺<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="restructuredtext">
 <h3>reStructuredText<a class="headerlink" href="#restructuredtext" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="http://www.sphinx-doc.org/en/1.4.8/rest.html">http://www.sphinx-doc.org/en/1.4.8/rest.html</a></p>
